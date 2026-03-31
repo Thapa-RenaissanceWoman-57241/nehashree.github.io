@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Your Name</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Hello, I'm <span>Your Name</span></h2>
+      <p>Passionate about public speaking, advocacy, and creative expression through writing and painting.</p>
+      <button onclick="scrollToSection('projects')">View My Work</button>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I combine communication, analysis, and creativity to make an impact. I enjoy public speaking, writing, painting, and advocating for ideas that matter.</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skill"><p>Public Speaking</p><div class="progress"><div style="width:95%"></div></div></div>
+    <div class="skill"><p>Writing</p><div class="progress"><div style="width:90%"></div></div></div>
+    <div class="skill"><p>Painting</p><div class="progress"><div style="width:85%"></div></div></div>
+    <div class="skill"><p>Advocacy</p><div class="progress"><div style="width:90%"></div></div></div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Speech Example</h3>
+      <p>A public speech I delivered on social issues.</p>
+    </div>
+    <div class="project">
+      <h3>Writing Sample</h3>
+      <p>A short essay I wrote on advocacy and social impact.</p>
+    </div>
+    <div class="project">
+      <h3>Art Showcase</h3>
+      <p>A selection of my paintings.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name">
+      <input type="email" id="email" placeholder="Your Email">
+      <textarea id="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Your Name</p>
+    <div class="socials">
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
